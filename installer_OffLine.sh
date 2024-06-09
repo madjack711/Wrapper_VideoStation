@@ -242,17 +242,19 @@ text_configB_5=("Please, Install the Advanced Wrapper first and then you will ca
 
 if [[ "$check_amrif" == "$firma2" ]]; then  
     info "${YELLOW}${text_configB_1[$LANG]}"
-    info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 96kbps (or AC3 5.1 128kbps), SECOND STREAM= MP3 2.0 64kbps in VIDEO-STATION." >> $logfile
+    info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 512kbps (or AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps in VIDEO-STATION." >> $logfile
     
-    # Modifier les configurations pour AAC en 5.1 avec la pire qualité possible et un tampon plus grand
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    # Modifier les configurations pour AAC en 5.1 avec un cache plus grand et une qualité réduite
+    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1" "-max_delay" "40000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
     sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "96k" "-b:a:1" "64k" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
 
-    # Modifier les configurations pour AC3 en 5.1 avec la pire qualité possible et un tampon plus grand
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    # Modifier les configurations pour AC3 en 5.1 avec un cache plus grand et une qualité réduite
+    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1" "-max_delay" "40000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
     sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "128k" "-b:a:1" "64k" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+
+    # Ajouter d'autres optimisations si nécessaire...
 
     info "${GREEN}${text_configB_2[$LANG]}"
     echo ""
@@ -263,17 +265,19 @@ fi
 
 if [[ "$check_amrif" == "$firma" ]]; then  
     info "${YELLOW}${text_configB_1[$LANG]}"
-    info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 96kbps (or AC3 5.1 128kbps), SECOND STREAM= MP3 2.0 64kbps in VIDEO-STATION." >> $logfile
+    info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 512kbps (or AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps in VIDEO-STATION." >> $logfile
     
-    # Modifier les configurations pour AAC en 5.1 avec la pire qualité possible et un tampon plus grand
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    # Modifier les configurations pour AAC en 5.1 avec un cache plus grand et une qualité réduite
+    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1" "-max_delay" "40000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
     sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "96k" "-b:a:1" "64k" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
 
-    # Modifier les configurations pour AC3 en 5.1 avec la pire qualité possible et un tampon plus grand
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    # Modifier les configurations pour AC3 en 5.1 avec un cache plus grand et une qualité réduite
+    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1" "-max_delay" "40000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
     sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "128k" "-b:a:1" "64k" "-max_delay" "80000000" "-bufsize" "8000000")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+
+    # Ajouter d'autres optimisations si nécessaire...
 
     info "${GREEN}${text_configB_2[$LANG]}"
     echo ""
