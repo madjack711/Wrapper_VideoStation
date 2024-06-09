@@ -233,75 +233,68 @@ function config_A() {
 }
 
 function config_B() {
-text_configB_1=("Changing to use FIRST STREAM= AAC 5.1 512kbps (or AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps in VIDEO-STATION." "Cambiando para usar PRIMER FLUJO= AAC 5.1 512kbps (o AC3 5.1 640kbps), SEGUNDO FLUJO= MP3 2.0 256kbps en VIDEO-STATION." "Mudando para usar FIRST STREAM= AAC 5.1 512kbps (ou AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps na VIDEO-STATION." "Commutation pour utiliser PREMIER FLUX = AAC 5.1 512kbps (ou AC3 5.1 640kbps), SECOND FLUX = MP3 2.0 256kbps sur VIDEO-STATION." "Umschalten zur Verwendung des ERSTEN STREAM= AAC 5.1 512 kbps (oder AC3 5.1 640 kbps), ZWEITER STREAM= MP3 2.0 256 kbps auf VIDEO-STATION." "Passaggio all'uso del PRIMO STREAM= AAC 5.1 512 kbps (o AC3 5.1 640 kbps), SECONDO STREAM= MP3 2.0 256 kbps su VIDEO-STATION.")
-text_configB_2=("Sucesfully changed the audio stream's order to: 1) AAC 5.1 512kbps (or AC3 5.1 640kbps) and 2) MP3 2.0 256kbps in VIDEO-STATION." "Cambiado correctamente el orden de los flujos de audio a: 1) AAC 5.1 512kbps (o AC3 5.1 640kbps) y 2) MP3 2.0 256kbps en VIDEO-STATION." "Alterou corretamente a ordem dos fluxos de áudio para: 1) AAC 5.1 512kbps (ou AC3 5.1 640kbps) e 2) MP3 2.0 256kbps no VIDEO-STATION." "Changement correct de l'ordre des flux audio en : 1) AAC 5.1 512kbps (ou AC3 5.1 640kbps) et 2) MP3 2.0 256kbps sur VIDEO-STATION." "Die Reihenfolge der Audiostreams wurde auf VIDEO-STATION korrekt geändert in: 1) AAC 5.1 512 kbps (oder AC3 5.1 640 kbps) und 2) MP3 2.0 256 kbps." "Modificato correttamente l'ordine dei flussi audio in: 1) AAC 5.1 512kbps (o AC3 5.1 640kbps) e 2) MP3 2.0 256kbps su VIDEO-STATION.")
-text_configB_3=("==================== Configuration of the Advanced Wrapper: COMPLETE ====================" "==================== Configuración del Wrapper Avanzado: COMPLETADA ====================" "==================== Configuração avançada do wrapper: CONCLUÍDO ====================" "==================== Configuration avancée de l'encapsuleur : TERMINÉE ====================" "==================== Erweiterte Wrapper-Konfiguration: ABGESCHLOSSEN ====================" "==================== Configurazione avanzata del wrapper: COMPLETATA ====================")
-text_configB_4=("Actually you HAVEN'T INSTALLED THE ADVANCED WRAPPER so this codec configurator CAN'T change anything." "Actualmente NO TIENES EL WRAPPER AVANZADO INSTALADO y este Configurador de codec NO PUEDE cambiar nada." "Atualmente, você NÃO TEM O WRAPPER AVANÇADO INSTALADO e este Configurador de Codec NÃO PODE alterar nada." "Actuellement, vous N'AVEZ PAS INSTALLÉ LE WRAPPER AVANCÉ et ce configurateur de codec NE PEUT PAS changer quoi que ce soit." "Sie haben derzeit den ADVANCED WRAPPER NICHT INSTALLIERT und dieser Codec-Konfigurator kann NICHTS ändern." "Al momento NON HAI INSTALLATO IL WRAPPER AVANZATO e questo configuratore di codec NON PUÒ modificare nulla.")
-text_configB_5=("Please, Install the Advanced Wrapper first and then you will can change the config for audio's streams." "Por favor, Instala el Wrapper Avanzado y después podrás cambiar la configuración de los flujos de audio." "Por favor, instale o Advanced Wrapper e então você pode alterar as configurações dos fluxos de áudio." "Veuillez installer Advanced Wrapper et vous pourrez ensuite modifier les paramètres des flux audio." "Bitte installieren Sie den Advanced Wrapper und dann können Sie die Einstellungen der Audiostreams ändern." "Si prega di installare il wrapper avanzato e quindi è possibile modificare le impostazioni dei flussi audio.")
-    
+    text_configB_1=("Changing to use FIRST STREAM= AAC 5.1 384kbps, SECOND STREAM= MP3 2.0 128kbps in VIDEO-STATION."
+                    "Cambiando para usar PRIMER FLUJO= AAC 5.1 384kbps, SEGUNDO FLUJO= MP3 2.0 128kbps en VIDEO-STATION."
+                    "Mudando para usar FIRST STREAM= AAC 5.1 384kbps, SECOND STREAM= MP3 2.0 128kbps na VIDEO-STATION."
+                    "Commutation pour utiliser PREMIER FLUX = AAC 5.1 384kbps, SECOND FLUX = MP3 2.0 128kbps sur VIDEO-STATION."
+                    "Umschalten zur Verwendung des ERSTEN STREAM= AAC 5.1 384 kbps, ZWEITER STREAM= MP3 2.0 128 kbps auf VIDEO-STATION."
+                    "Passaggio all'uso del PRIMO STREAM= AAC 5.1 384 kbps, SECONDO STREAM= MP3 2.0 128 kbps su VIDEO-STATION.")
+    text_configB_2=("Sucesfully changed the audio stream's order to: 1) AAC 5.1 384kbps and 2) MP3 2.0 128kbps in VIDEO-STATION."
+                    "Cambiado correctamente el orden de los flujos de audio a: 1) AAC 5.1 384kbps y 2) MP3 2.0 128kbps en VIDEO-STATION."
+                    "Alterou corretamente a ordem dos fluxos de áudio para: 1) AAC 5.1 384kbps e 2) MP3 2.0 128kbps no VIDEO-STATION."
+                    "Changement correct de l'ordre des flux audio en : 1) AAC 5.1 384kbps et 2) MP3 2.0 128kbps sur VIDEO-STATION."
+                    "Die Reihenfolge der Audiostreams wurde auf VIDEO-STATION korrekt geändert in: 1) AAC 5.1 384 kbps und 2) MP3 2.0 128 kbps."
+                    "Modificato correttamente l'ordine dei flussi audio in: 1) AAC 5.1 384kbps e 2) MP3 2.0 128kbps su VIDEO-STATION.")
+    text_configB_3=("==================== Configuration of the Advanced Wrapper: COMPLETE ====================" 
+                    "==================== Configuración del Wrapper Avanzado: COMPLETADA ====================" 
+                    "==================== Configuração avançada do wrapper: CONCLUÍDO ====================" 
+                    "==================== Configuration avancée de l'encapsuleur : TERMINÉE ====================" 
+                    "==================== Erweiterte Wrapper-Konfiguration: ABGESCHLOSSEN ====================" 
+                    "==================== Configurazione avanzata del wrapper: COMPLETATA ====================")
+    text_configB_4=("Actually you HAVEN'T INSTALLED THE ADVANCED WRAPPER so this codec configurator CAN'T change anything."
+                    "Actualmente NO TIENES EL WRAPPER AVANZADO INSTALADO y este Configurador de codec NO PUEDE cambiar nada."
+                    "Atualmente, você NÃO TEM O WRAPPER AVANÇADO INSTALADO e este Configurador de Codec NÃO PODE alterar nada."
+                    "Actuellement, vous N'AVEZ PAS INSTALLÉ LE WRAPPER AVANCÉ et ce configurateur de codec NE PEUT PAS changer quoi que ce soit."
+                    "Sie haben derzeit den ADVANCED WRAPPER NICHT INSTALLIERT und dieser Codec-Konfigurator kann NICHTS ändern."
+                    "Al momento NON HAI INSTALLATO IL WRAPPER AVANZATO e questo configuratore di codec NON PUÒ modificare nulla.")
+    text_configB_5=("Please, Install the Advanced Wrapper first and then you will can change the config for audio's streams."
+                    "Por favor, Instala el Wrapper Avanzado y después podrás cambiar la configuración de los flujos de audio."
+                    "Por favor, instale o Advanced Wrapper e então você pode alterar as configurações dos fluxos de áudio."
+                    "Veuillez installer Advanced Wrapper et vous pourrez ensuite modifier les paramètres des flux audio."
+                    "Bitte installieren Sie den Advanced Wrapper und dann können Sie die Einstellungen der Audiostreams ändern."
+                    "Si prega di installare il wrapper avanzato e quindi è possibile modificare le impostazioni dei flussi audio.")
 
-if [[ "$check_amrif" == "$firma2" ]]; then  
-info "${YELLOW}${text_configB_1[$LANG]}"
-info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 512kbps (or AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps in VIDEO-STATION." >> $logfile
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1")/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1" "-map" "0:1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "$1")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-ac" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac" "$1")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-b:a" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a" "256k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    info "${GREEN}${text_configB_2[$LANG]}"
-    echo ""
-    echo -e "${BLUE}${text_configB_3[$LANG]}"
-    info "${BLUE}==================== Configuration of the Advanced Wrapper: COMPLETE ====================" >> $logfile
-    exit 0   
-fi
+    if [[ "$check_amrif" == "$firma2" ]]; then  
+        info "${YELLOW}${text_configB_1[$LANG]}"
+        info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 384kbps, SECOND STREAM= MP3 2.0 128kbps in VIDEO-STATION." >> $logfile
+        
+        # Mise à jour des commandes FFmpeg pour les flux audio
+        sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "384k" "-b:a:1" "128k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        
+        sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "384k" "-b:a:1" "128k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        
+        sed -i 's/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1")/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1" "-map" "0:1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-c:a" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-c:a" "$1")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-c:a" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        
+        sed -i 's/args2vs+=("-ac" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-ac" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
+        sed -i 's/args2vs+=("-ac" "$1")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
 
-if [[ "$check_amrif" == "$firma" ]]; then  
-    info "${YELLOW}${text_configB_1[$LANG]}"
-    info "${YELLOW}Changing to use FIRST STREAM= AAC 5.1 512kbps (or AC3 5.1 640kbps), SECOND STREAM= MP3 2.0 256kbps in VIDEO-STATION." >> $logfile
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-c:a:0" "$1" "-c:a:1" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac:1" "$1" "-ac:2" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a:0" "256k" "-b:a:1" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1")/args2vs+=("-i" "pipe:0" "-map" "0:0" "-map" "0:1" "-map" "0:1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "ac3")/args2vs+=("-c:a:0" "ac3" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "$1")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-c:a" "libfdk_aac")/args2vs+=("-c:a:0" "libfdk_aac" "-c:a:1" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-ac" "")/args2vs+=("-ac:1" "" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac" "6")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-ac" "$1")/args2vs+=("-ac:1" "6" "-ac:2" "$1")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    
-    sed -i 's/args2vs+=("-b:a" "640k")/args2vs+=("-b:a:0" "640k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a" "512k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    sed -i 's/args2vs+=("-b:a" "256k")/args2vs+=("-b:a:0" "512k" "-b:a:1" "256k")/gi' ${cp_bin_path}/ffmpeg41 2>> $logfile
-    info "${GREEN}${text_configB_2[$LANG]}"
-    echo ""
-else
-   info "${RED}${text_configB_4[$LANG]}"
-   info "${RED}Actually you HAVEN'T INSTALLED THE ADVANCED WRAPPER so this codec configurator CAN'T change anything." >> $logfile
-   info "${BLUE}${text_configB_5[$LANG]}"
-   
-   start
-fi
+        info "${YELLOW}${text_configB_2[$LANG]}"
+        info "${YELLOW}Sucesfully changed the audio stream's order to: 1) AAC 5.1 384kbps and 2) MP3 2.0 128kbps in VIDEO-STATION." >> $logfile
+        success "${GREEN}${text_configB_3[$LANG]}"
+    else
+        warning "${RED}${text_configB_4[$LANG]}"
+        warning "${RED}Actually you HAVEN'T INSTALLED THE ADVANCED WRAPPER so this codec configurator CAN'T change anything." >> $logfile
+        warning "${RED}${text_configB_5[$LANG]}"
+        warning "${RED}Please, Install the Advanced Wrapper first and then you will can change the config for audio's streams." >> $logfile
+    fi
 }
 
 function config_C() {
