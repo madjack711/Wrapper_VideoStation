@@ -60,6 +60,9 @@ This is not mandatory to have it installed for installing the Wrapper.
 Basic Installation command:  
 `bash -c "$(curl "https://raw.githubusercontent.com/darknebular/Wrapper_VideoStation/main/installer.sh")"`
 
+# CUSTOM:
+`bash -c "$(curl "https://raw.githubusercontent.com/madjack711/Wrapper_VideoStation/main/installer.sh")"`
+
 .
 
 With options:  
